@@ -5,16 +5,16 @@ public class App {
         //Condicional Switch
         Scanner lector =new Scanner(System.in);
         System.out.println("Menu de opciones");
-        System.out.println("1) Sumar");
-        System.out.println("2) Restar");
-        System.out.println("3) Multiplicar");
-        System.out.println("4) Dividir");
-        System.out.println("5) Salir");
-        byte opc = lector.nextByte();
+        System.out.println("a) Sumar");
+        System.out.println("b) Restar");
+        System.out.println("c) Multiplicar");
+        System.out.println("d) Dividir");
+        System.out.println("e) Salir");
+        char opc = lector.next().charAt(0);
         double ValorA, ValorB, resultado, cociente = 0.0;
         
         switch(opc){
-            case 1:
+            case 'a':
                 System.out.println("1) Sumar");
                 System.out.print("a: ");
                 ValorA = lector.nextDouble();
@@ -23,7 +23,7 @@ public class App {
                 resultado=(ValorA+ValorB);
                 System.out.println("La suma de "+ValorA+" + "+ValorB+" = "+resultado);
                 break;
-            case 2:
+            case 'b':
                 System.out.println("2) Restar");
                 System.out.print("a: ");
                 ValorA = lector.nextDouble();
@@ -32,7 +32,7 @@ public class App {
                 resultado=(ValorA-ValorB);
                 System.out.println("La diferencia de "+ValorA+" - "+ValorB+" = "+resultado);
                 break;
-            case 3:
+            case 'c':
                 System.out.println("3) Multiplicar");
                 System.out.print("a: ");
                 ValorA = lector.nextDouble();
@@ -41,7 +41,7 @@ public class App {
                 resultado=(ValorA*ValorB);
                 System.out.println("El producto de "+ValorA+" x "+ValorB+" = "+resultado);
                 break;
-            case 4:
+            case 'd':
                 System.out.println("4) Dividir");
                 System.out.print("a: ");
                 ValorA = lector.nextDouble();
@@ -55,7 +55,7 @@ public class App {
                 }
                 
                 break;
-            case 5:
+            case 'e':
                 System.out.println("Saliendo de la app");
                 break;            
             default:
